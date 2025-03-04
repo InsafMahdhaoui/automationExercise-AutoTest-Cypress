@@ -71,5 +71,6 @@ After test execution, reports are stored in the cypress/reports/ mochwesome
 Open index.html in a browser to view results.
 
 👥 Contributors
-Your **Insaf MAHDHAOUI** – [GitHub](https://github.com/InsafMahdhaoui/)
+
+ **Insaf MAHDHAOUI** – [GitHub](https://github.com/InsafMahdhaoui/)
 
