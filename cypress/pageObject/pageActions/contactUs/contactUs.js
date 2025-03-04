@@ -24,7 +24,7 @@ class contactUsActions {
     // });
 
     //uploading file from project
-    cy.get(contactUsSelectors.selectFileBtn).attachFile("certif_anglais.jpg");
+    cy.get(contactUsSelectors.selectFileBtn).attachFile("contactUsFile.txt");
   }
 
   submitClick() {
