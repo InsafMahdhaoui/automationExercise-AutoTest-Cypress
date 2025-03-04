@@ -30,8 +30,8 @@ Test execution reports are generated using **Mochawesome**.
 
     ├── 📂 videos # Recorded videos for every test Case
     ├── 📂 screenshots # Captured screenshots (on failure) 
-    ├── mochawesome.json # MochaWesome json report (JSON)
-    ├── index.html # Mochawesome HTML Report (HTML)
+    ├── 📜 mochawesome.json # MochaWesome json report (JSON)
+    ├── 📜 index.html # Mochawesome HTML Report (HTML)
     
 ├── 📜 cypress.config.js # Cypress configuration 
 
