@@ -1,9 +1,9 @@
 import loginSelectors from "../../../pageElements/auth/login/login";
-import baseUrl from "../../../../../config.json";
+import config from "../../../../../config.json";
 
 class LoginActions {
   visitWebSite() {
-    cy.visit("https://www.automationexercise.com/");
+    cy.visit(config.baseUrl);
   }
   navigateToLoginPage() {
     cy.get(loginSelectors.signUpLoginBtn).click();

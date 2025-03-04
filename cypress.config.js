@@ -22,6 +22,7 @@ module.exports = defineConfig({
   },
 
   e2e: {
+    baseUrl: "https://www.automationexercise.com/",
     setupNodeEvents(on, config) {
       // Initialize the Mochawesome reporter plugin
       require("cypress-mochawesome-reporter/plugin")(on);
