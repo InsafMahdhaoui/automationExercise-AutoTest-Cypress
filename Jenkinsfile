@@ -12,28 +12,35 @@ pipeline{
     }
 
     stages{
-        stage("Building"){
+        stage("Building")
+        {
+            steps{
             echo "Building the application"
+            }
         }
-        stage("Testing"){
+        stage("Testing")
+        {
             steps{
                 //"bat" utiliser pour acceder au cmd du windows, en cas de SE "Linux" on utilise "sh" pour "shell"
                 bat "npm i"  // installer les dependencies
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}" //executer les scripts et specifier le navigateur et le spec
             }
         }
-                stage("Deploying"){
-                echo "Deploy the application "
+        stage("Deploying")
+        {
+            steps{
+                echo "Deploy the application " 
                 }
+        }
     }
 
-post{ //"post build actions" les actions que vont etre lieu toujours apres la stage "Testing" 
-always {
-    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
-}
+    post{ //"post build actions" les actions que vont etre lieu toujours apres la stage "Testing" 
+        always 
+        {
+         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+        }
 
-}
-    //publish a html report
+    }
 
 }
 
