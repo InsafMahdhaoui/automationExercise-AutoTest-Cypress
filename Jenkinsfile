@@ -8,7 +8,7 @@ pipeline{
 	
 	}
     options{
-       ansiColor: ("xterm") //ajouter des couleurs aux logs (consol outputs)
+       ansiColor: ('xterm') //ajouter des couleurs aux logs (consol outputs)
     }
 
     stages{
