@@ -7,7 +7,7 @@ Feature: Contact us
         When I enter the email "abc123456@koors.com" and the password "abc123++"
         Then I am on the home page and "Logout" displayed
 
-    Scenario: Search product
+    Scenario: Contact us
         When I click on contact us button
         Then I  am on the contact us page and "Get In Touch" displayed
         When  I enter the name "user" and the email adress "abc123456@koors.com"
