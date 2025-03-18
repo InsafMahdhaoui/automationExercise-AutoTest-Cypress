@@ -27,6 +27,6 @@ Feature: User Login with Valid and invalid credentials
         Then A validation message "<validationMsg>" will be displayed under the "<field>"
 
         Examples:
-            | email               | password    | validationMsg               | field    |
-            | {backspace}         | abc123++    | Please fill out this field. | email    |
-            | abc123456@koors.com | {backspace} | Please fill out this field. | password |
+            | email               | password    | validationMsg                 | field    |
+            | {backspace}         | abc123++    | Veuillez renseigner ce champ. | email    |
+            | abc123456@koors.com | {backspace} | Veuillez renseigner ce champ. | password |
