@@ -38,7 +38,14 @@ pipeline{
     post{ //"post build actions" les actions que vont etre lieu toujours apres la stage "Testing" 
         always 
         {
-         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports/mochawesome', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+         publishHTML([allowMissing: false, 
+            alwaysLinkToLastBuild: true, 
+            keepAll: true,
+            reportDir: 'cypress/reports/mochawesome', 
+            reportFiles: 'index.html', 
+            reportName: 'HTML Report', 
+            reportTitles: '', 
+            useWrapperFileDirectly: true])
         }
 
     }
